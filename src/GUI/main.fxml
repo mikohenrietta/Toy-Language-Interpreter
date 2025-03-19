@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="823.0" prefWidth="922.0" style="-fx-background-color: plum;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainController">
+   <children>
+      <TextField fx:id="prgStatesTextField" editable="false" layoutX="167.0" layoutY="32.0" />
+      <Label layoutX="36.0" layoutY="36.0" text="Nr of program states:" />
+      <TableView fx:id="heapTableView" layoutX="167.0" layoutY="91.0" prefHeight="200.0" prefWidth="185.0">
+        <columns>
+          <TableColumn fx:id="addressColumn" prefWidth="93.0" text="Address" />
+          <TableColumn fx:id="valColumn" prefWidth="91.0" text="Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="91.0" text="Heap Table:" />
+      <ListView fx:id="outListView" layoutX="167.0" layoutY="315.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="36.0" layoutY="315.0" text="Out:" />
+      <ListView fx:id="fileListView" layoutX="167.0" layoutY="553.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="34.0" layoutY="553.0" text="File Table" />
+      <ListView fx:id="prgStatesIdsListView" layoutX="574.0" layoutY="32.0" onMouseClicked="#programStateChosen" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="423.0" layoutY="36.0" text="PrgStates ids:" />
+      <TableView fx:id="symTableView" layoutX="574.0" layoutY="259.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="keyColumn" prefWidth="100.0" text="Var Name" />
+          <TableColumn fx:id="valueColumn" prefWidth="99.0" text="Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="423.0" layoutY="259.0" text="Sym Table:" />
+      <ListView fx:id="exeStackListView" layoutX="574.0" layoutY="507.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="445.0" layoutY="499.0" text="Exe Stack:" />
+      <Button fx:id="oneStepButton" layoutX="629.0" layoutY="741.0" mnemonicParsing="false" onMouseClicked="#oneStep" text="Run One Step" />
+   </children>
+</AnchorPane>

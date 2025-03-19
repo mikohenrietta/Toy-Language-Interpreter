@@ -1,0 +1,19 @@
+Id: 6
+Generic stack contains:
+(Int v; (v = 4; (while((v > 0)) {(print(v); v = v-1)}; print(v))))
+Generic map contains:
+Generic list contains:
+File table contains:
+Heap contains:
+
+
+Id: 6
+Generic stack contains:
+(v = 4; (while((v > 0)) {(print(v); v = v-1)}; print(v)))
+Int v
+Generic map contains:
+Generic list contains:
+File table contains:
+Heap contains:
+
+
